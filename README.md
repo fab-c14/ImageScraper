@@ -65,7 +65,7 @@ You can customize ImageScrapper's behavior by modifying the parameters in the `a
 
 ## Contributors
 
-- [Your Name](https://github.com/fab-c14) - Project Lead
+- [Fab-c14](https://github.com/fab-c14) - Project Lead
 
 ---
 
