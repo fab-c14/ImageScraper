@@ -59,13 +59,13 @@ ImageScrapper is a versatile Python-based web scraping tool designed for fetchin
 
 ## Configuration
 
-You can customize ImageScrapper's behavior by modifying the parameters in the `config.py` file.
+You can customize ImageScrapper's behavior by modifying the parameters in the `app.py` file.
 
 ---
 
 ## Contributors
 
-- [Your Name](https://github.com/fab-cq4) - Project Lead
+- [Your Name](https://github.com/fab-c14) - Project Lead
 
 ---
 
