@@ -2,9 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 import logging 
-from flask import Flask
+from flask import Flask, render_template
 
-from pymongo.mongo_client import MongoClient
+# from pymongo.mongo_client import MongoClient
 import os
 
 app = Flask(__name__)
@@ -38,3 +38,19 @@ def makingHomePage():
             "index":image_url,"image":image_data
         }
         img_data_mongo.append(mydict)
+    return render_template('index.html',message='hello flaks app')
+
+@app.route('/search_results', methods=['GET'])
+def search_results():
+    search_input = request.args.get('searchInput')
+    
+    # Process the search input if needed
+    
+    # Redirect to the "/images" page
+    return redirect(url_for('images'))
+
+if __name__ == '__main__':
+ 
+    # run() method of Flask class runs the application 
+    # on the local development server.
+    app.run()
