@@ -38,9 +38,10 @@ def makingHomePage():
         img_data_mongo.append(mydict)
     return render_template('index.html',message='hello flaks app')
 
-@app.route('/searchInput', methods=['GET'])
+@app.route('/images', methods=['POST'])
 def search_results():
     search_input = request.args.get('searchInput')
+
     return render_template('images.html',message=search_input)
     
 
