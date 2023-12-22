@@ -16,8 +16,6 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 def makingHomePage():
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
-
-
     query = "pm narendra modi"
     response = requests.get(f"https://www.google.com/search?q={query}&sca_esv=587928711&rlz=1C1CHBF_enIN1048IN1048&tbm=isch&source=lnms&sa=X&ved=2ahUKEwit3pSZ0_eCAxVDyTgGHanECwMQ_AUoAnoECAMQBA&biw=798&bih=737&dpr=1")
 
@@ -40,14 +38,11 @@ def makingHomePage():
         img_data_mongo.append(mydict)
     return render_template('index.html',message='hello flaks app')
 
-@app.route('/search_results', methods=['GET'])
+@app.route('/searchInput', methods=['GET'])
 def search_results():
     search_input = request.args.get('searchInput')
+    return render_template('images.html',message=search_input)
     
-    # Process the search input if needed
-    
-    # Redirect to the "/images" page
-    return redirect(url_for('images'))
 
 if __name__ == '__main__':
  
