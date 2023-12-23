@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1> Here are Your Beautiful Searched Images</h1>
+    <div class="cards">
     {% for image_name in file_name %}
     <div class="card">
         <img src="{{ url_for('static', filename='images/' + image_name) }}" alt="{{ image_name }}">
@@ -17,6 +18,7 @@
         </div>
     </div>
     {% endfor %}
+</div>
     <h1>Follow me here<a href="https://github.com/fab-c14">Github Account</a></h1>
 </body>
 </html>
