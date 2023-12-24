@@ -1,14 +1,14 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+title: BUG
+labels: bug
+assignees: fab-c14
 
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+Sometimes It may not be able to reach the site
 
 **To Reproduce**
 Steps to reproduce the behavior:
